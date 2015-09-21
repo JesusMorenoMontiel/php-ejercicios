@@ -29,7 +29,7 @@ distribuidas en dos columnas. Utiliza la etiqueta
         $palabra16 = "Jeans";
         $palabra17 = "Luna";
         $palabra18 = "Moon";
-        $palabra19 = "Sol";
+        $palabra19 = "Sool";
         $palabra20 = "Sun";
         ?>
         <div>
@@ -38,7 +38,7 @@ distribuidas en dos columnas. Utiliza la etiqueta
                     <th>Español</th> <th>Inglés</th>
                 </tr>
                 <tr>
-                    <td><?php echo $palabra1; ?></td> <td><?php echo $palabra2; ?></td>
+                    <td><?= $palabra1 ?></td> <td><?php echo $palabra2; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo $palabra3; ?></td> <td><?php echo $palabra4; ?></td>
