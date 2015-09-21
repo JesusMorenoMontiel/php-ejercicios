@@ -1,6 +1,6 @@
 <html>
 <!--
-Escribe un programa que muestre tu nombre por pantalla. Utiliza código PHP.
+Escribee un programa que muestre tu nombre por pantalla. Utiliza código PHP.
 -->
     <head>
         <meta charset="UTF-8">
