@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+div   {
+    margin: 0 auto;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+table{
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+th,td{
+   border: 1px solid #000;
+   border-radius: 10px;
+   padding: 3px;
+}
+
+div p{
+    width: 300px;
+    text-align: left;
+    margin: 0 auto;
+}
+
