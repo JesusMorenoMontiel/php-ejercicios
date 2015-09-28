@@ -22,26 +22,38 @@
                 $solucionA = ((-($b)+$raizCuadrada)/(2 * $a));
                 $solucionB = ((-($b)-$raizCuadrada)/(2 * $a));
                 
-                if ($comprobar < 0) {
-                    //compruebo que el interior de la raiz cuadrada es 0, 
-                    //si es así no se puede hacer la ecuación.
+                if (($a == 0) && ($b == 0) && ($c != 0)) {
                     echo "<img id='saludo' SRC='images/NoSolucion.png'>";
                     echo "<h1>NO TIENE SOLUCIÓN!</h1>";
-                    
-                    //Compruebo si la solución de la raiz cuadrada es 0,
-                    //si es así, solo tiene una solicíon.
-                } else { if ($comprobar == 0) {
-                    echo "<img id='saludo' SRC='images/SiSolucion.png'>";
-                    echo "<h1>TIENE UNA SOLUCIÓN!</h1>";
-                    echo "Solución = ", $solucionA;
-                  }else{
-                      //al no ser negativo ni 0, la ecuación tiene dos soluciones.
-                     echo "<img id='saludo' SRC='images/SiSolucion.png'>";
-                     echo "<h1>TIENE DOS SOLUCIONES!</h1>";
-                     echo "Solución A = ", $solucionA, "<br>";
-                     echo "Solución B = ", $solucionB, "<br>";
+                }else{
+                     if (($a == 0) && ($b == 0) && ($c == 0)) {
+                            echo "<img id='saludo' SRC='images/NoSolucion.png'>";
+                            echo  "<h1>La ecuación tiene infinitas soluciones.</h1>";
+                            
+                        }
+                   else{
+                        if ($comprobar < 0) {
+                            //compruebo que el interior de la raiz cuadrada es 0, 
+                            //si es así no se puede hacer la ecuación.
+                            echo "<img id='saludo' SRC='images/NoSolucion.png'>";
+                            echo "<h1>NO TIENE SOLUCIÓN!</h1>";
+
+                            //Compruebo si la solución de la raiz cuadrada es 0,
+                            //si es así, solo tiene una solicíon.
+                        } else { if ($comprobar == 0) {
+                            echo "<img id='saludo' SRC='images/SiSolucion.png'>";
+                            echo "<h1>TIENE UNA SOLUCIÓN!</h1>";
+                            echo "Solución = ", $solucionA;
+                          }else{
+                              //al no ser negativo ni 0, la ecuación tiene dos soluciones.
+                             echo "<img id='saludo' SRC='images/SiSolucion.png'>";
+                             echo "<h1>TIENE DOS SOLUCIONES!</h1>";
+                             echo "Solución A = ", $solucionA, "<br>";
+                             echo "Solución B = ", $solucionB, "<br>";
                    
-                  }
+                            }
+                            }
+                        }
                 }
                 
             ?>
