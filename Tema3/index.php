@@ -47,7 +47,7 @@ en cuenta las horas, los minutos no se deben introducir por teclado.
                         <option value="9">SEPTIEMBRE</option>
                         <option value="10">OCTUBRE</option>
                         <option value="11">NOVIEMBRE</option>
-                        <option value="12">DICIEMBER</option> 
+                        <option value="12">DICIEMBRE</option> 
                     </select>
                 DÍA: <input type="number" name="dia" min="1" max="31"><br>
             <input type="submit" value="ENVIAR">
